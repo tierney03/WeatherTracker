@@ -4,8 +4,17 @@ const button = document.querySelector('.searchBtn')
 const input = document.getElementById('city')
 const clear = document.querySelector('.clear')
 const inputValue = document.querySelector('.inputValue')
-
 let itemsArray = []
+
+let cityWeather = "Nashville"
+const weekday = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const months = ['Jan','Feb','Mar','Apr','May','June','July','Aug','Sept','Oct','Nov','Dec']
+
+function fetchWeather() {
+  fetch('https://api.openweathermap.org/data/2.5/weather?q={cityWeather}&appid={d4adb16a540d05747383168aac8cb7cd}')
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+}
 
 function saveCity(newCity) {
   let data = JSON.parse(localStorage.getItem('saved-cities')) || []
@@ -42,10 +51,6 @@ clear.addEventListener('click', function () {
     displayCity()
   })
 
-  function fetchWeather() {
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=d4adb16a540d05747383168aac8cb7cd')
-    .then((response) => response.json())
-    .then((data) => console.log(data));
-  }
+
 
 

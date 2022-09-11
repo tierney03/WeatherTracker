@@ -1,11 +1,11 @@
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Oswald', sans-serif;
     background-color: lightgrey;
 }
 
 header {
     font-size: 40px;
-    background-color: rgb(225, 173, 42);
+    background-color: rgb(175, 111, 220);
     border-radius: 5px;
     color: black;
     font-weight: bold;
@@ -16,56 +16,42 @@ header {
     align-items: center;
 }
 
-.flexContainer1 {
-    float: left;
-    padding: 10px;
-}
-
-.flexContainer2 {
-    display: flex;
-    flex-direction: column;
-    float: right;
-}
-
 form {
     font-size: 20px;
 }
 
-/* h1 {
-    align-items: center;
-} */
-
-.card {
-    border: 1px black solid;
-    margin: 5px;
-    background-color: lightblue;
-}
-
-.currentCity {
-    border: 2px solid black;
-    height: 200px;
-    width: 800px;
-    margin-left: 25px;
-    margin-top: 10px;
-    background-color: white;
-}
-
-.fiveDay {
-    border: 2px black solid;
-    height: 300px;
-    width: 800px;
-    margin-left: 25px;
-    margin-top: 10px;
-    background-color: white;
+#top {
     display: flex;
     justify-content: space-evenly;
 }
 
+#bottom {
+    display: flexbox;
+    justify-content: center;
+}
+#currentCity {
+    border: 2px solid black;
+    height: 200px;
+    width: 600px;
+    margin-left: 25px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+#fiveDay {
+    border: 2px black solid;
+    height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+    background-color: white;
+} 
+
 .search {
     padding: 10px;
     font-size: 25px;
-    display: flex;
-    flex-direction: column;
+    display: flexbox;
+    flex-direction: row;
     margin: 10px;
 }
 

@@ -42,4 +42,10 @@ clear.addEventListener('click', function () {
     displayCity()
   })
 
-  // fetch('https://api.openweathermap.org/data/3.0/onecall?q='+inputValue.value+&appid='d4adb16a540d05747383168aac8cb7cd)
+  function fetchWeather() {
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=d4adb16a540d05747383168aac8cb7cd')
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+  }
+
+

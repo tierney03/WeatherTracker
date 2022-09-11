@@ -7,104 +7,40 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>Weather Dashboard</header>
-<section>
-    <div class="flexContainer1" class="search">
-        <form>Search:
-            <input id="city" type="text" class=inputValue placeholder="location" required />
-          </form>
-          <button class="searchBtn">Search</button>
-          <h2>Locations</h2>
-          <ul>
-          </ul>
+      <div class="container">
+        <div class="row" id="top">
+          <div class="six columns">
+            <form>Search:
+              <input id="city" type="text" class=inputValue placeholder="location" required />
+            </form>
+            <button class="searchBtn">Search</button>
+            <h2>Locations</h2>
+            <ul>
+            </ul>
           <button class="clear">Clear All</button>
+          </div>
+        <div class="six columns">
+          <div id="currentCity">
+            Current
+          </div>
         </div>
-    </div>
-    <div class="flexContainer2">
-        <div class="currentCity">
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="http://openweathermap.org/img/wn/10d@2x.png" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">City</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>  
-        <div class="fiveDay">
-            <h1></h1>
-            <div class="card">
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Date</h5>
-                  <p class="card-text">Monday</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-            </div>
-            <div class="card">
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Date</h5>
-                  <p class="card-text">Monday</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-            </div>
-            <div class="card">
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Date</h5>
-                  <p class="card-text">Monday</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-            </div>
-            <div class="card">
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Date</h5>
-                  <p class="card-text">Monday</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-            </div>
-            <div class="card">
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Date</h5>
-                  <p class="card-text">Monday</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-            </div>
-
+      </div>
+          <div class="row" id="bottom">
+            <div class="twelve columns">
+          <div id="fiveDay">
+            5 day
+          </div>
         </div>
-    </div>
+        </div>
+        
+      </div>
         <script src="assets/index.js" async defer></script>
-</section>
+  </div>
     </body>
 </html>
